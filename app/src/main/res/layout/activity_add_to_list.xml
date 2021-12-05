@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_to_list_Layout"
+    tools:context=".AddToListActivity">
+
+    <TextView
+        android:id="@+id/add_to_list_activity_tvGenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="@string/add_to_list_activity_tvGenderTitleName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/add_to_list_activity_tvStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="@string/add_to_list_activity_tvStatusTitleName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tvGenderTitle"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <Button
+        android:id="@+id/add_to_list_activity_btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_list_btnAddName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tvStatusTitle"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <TextView
+        android:id="@+id/add_to_list_activity_tVNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:inputType="none"
+        android:text="@string/add_to_list_activity_tVNameTitleName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tvGenderTitle"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/add_to_list_activity_tVDescriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="@string/add_to_list_activity_tVDescriptionTitleName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tvName"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <EditText
+        android:id="@+id/add_to_list_activity_tvName"
+        android:layout_width="351dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tVNameTitle"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/add_to_list_activity_tvDescription"
+        android:layout_width="364dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_to_list_activity_tvStatusTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tVDescriptionTitle"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Spinner
+        android:id="@+id/add_to_list_activity_sGender"
+        android:layout_width="109dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Spinner
+        android:id="@+id/add_to_list_activity_sStatus"
+        android:layout_width="109dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toEndOf="@+id/add_to_list_activity_tvStatusTitle"
+        app:layout_constraintTop_toBottomOf="@+id/add_to_list_activity_tvDescription"
+        app:layout_constraintVertical_bias="0.208" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

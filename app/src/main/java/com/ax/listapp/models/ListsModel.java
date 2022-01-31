@@ -1,8 +1,12 @@
-package com.ax.listapp;
+package com.ax.listapp.models;
+
+import android.util.Log;
+
+import com.ax.listapp.R;
 
 import java.util.ArrayList;
 
-public class Lists {
+public class ListsModel {
     public static ArrayList<Integer> genders = new ArrayList<Integer>(){
         {
             add(R.drawable.maleicon);
@@ -35,4 +39,16 @@ public class Lists {
             add("Bilgisayar Mühendisi, Android yazılım projelerinde bulundu");
         }
     };
+    public static void add(Integer imageGender, Integer imageTicks, String name, String info){
+        genders.add(imageGender);
+        ticks.add(imageTicks);
+        names.add(name);
+        infos.add(info);
+    }
+    public static void remove(int position){
+        genders.remove(position);
+        ticks.remove(position);
+        names.remove(position);
+        infos.remove(position);
+    }
 }

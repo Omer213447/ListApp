@@ -38,7 +38,7 @@ public class ShowInfoActivity extends AppCompatActivity {
         Intent i = getIntent();
         tvName.setText(i.getStringExtra("name"));
         tvDescription.setText(i.getStringExtra("description"));
-        ivGender.setImageResource(i.getIntExtra("gender", R.drawable.tick));
+        ivGender.setImageResource(i.getIntExtra("gender", R.drawable.maleicon));
         ivStatus.setImageResource(i.getIntExtra("status", R.drawable.tick));
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
